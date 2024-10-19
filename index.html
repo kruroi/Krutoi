@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #i1{
+            position: fixed;
+            display: none;
+        }
+        .in1{
+            position: relative;
+            height: 50px;
+            width: 100px;
+            background: url(./img/niti1.png) fixed;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body bgcolor="red">
+    <img src="./img/spider.png" height="400" >
+    <img src="./img/nit.png" height="100" width="100" id="i1">
+    <input  class="in1" type="button" value="стрелять" onclick="fire()">
+    <script>
+        function fire(){
+            var a = document.getElementById("i1")
+            if (a.style.display == "none") {
+                a.style.display = "block"
+                a.style.marginTop = "-250px"
+                a.style.marginLeft = "320px"
+                a.style.transition = "3000ms"
+                setTimeout(function(){
+                    a.style.width = "400px"
+                    a.style.height = "400px"
+                a.style.transform = "translate(1500px,1500px)"
+                    
+                })
+            } else {
+                a.style.display = "none"
+                a.style.width = "100px"
+                a.style.height = "100px"
+                a.style.transform = "translateX(0)"
+            }
+        }
+    </script>
+</body>
+</html>
