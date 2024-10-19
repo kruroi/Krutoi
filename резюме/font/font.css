@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "font1";
+  src: url("./Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "font2";
+  src: url("./Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "font3";
+  src: url("./Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "font4";
+  src: url("./Inter-Regular.ttf");
+}
+*{
+  font-family: font3,font4;
+}
+h1,h2,h3,h4,h6{
+  font-family: font4,font3;
+}
+h1{
+  font-family: font1,font3,font4;
+}
+p,ul,label{
+  font-family: font4;
+  font-size: 12px;
+}
+button{
+  font-family: font4,font3;
+}
+.p-plus{
+  font-size: 18px;
+}
+.p-minus{
+  font-size: 14px;
+}
