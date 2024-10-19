@@ -1,0 +1,214 @@
+@font-face {
+  font-family: Aegean;
+  src: url(./font/Inter-Regular.ttf);
+}
+*{
+  font-family: Aegean;
+  color: #0f49a1;
+}
+img{
+  border-radius: 20px;
+}
+.body{
+  width: 80%;
+  margin: 0 auto;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  margin-left: auto;
+  list-style-type: none;
+  display: inline-flex;
+}
+nav ul li{
+  transform: scale(1);
+  padding: 10px;
+}
+nav ul li:hover{
+  transform: scale(1.1);
+}
+nav ul li a{
+  font-size: 20px;
+  text-decoration: none;
+}
+section{
+  width: 100%;
+}
+label{
+  padding: 10px;
+  border-radius: 10px;
+}
+.group{
+  display: none;
+}
+.group:checked + label{
+  background-color: #acbfde ;
+}
+.info-fase{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-fase .radio-fase{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.div-name{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ .radio-fase .div-name div{
+  width: 300px;
+  background-color: #acbfde;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px #0f49a1;
+}
+.hoses{
+  background: url(./img/photo_gallery/1.jfif) center center no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 600px;
+  margin: 10px auto;
+  border-radius: 10px;
+
+  animation-name: slide;
+  animation-duration:25s;
+  animation-timing-function:ease;
+  animation-iteration-count:infinite;
+}
+@keyframes slide {
+  0%{
+    background: url(./img/photo_gallery/1.jfif) center center no-repeat;
+    background-size: cover;
+  }
+  7%{
+    background: url(./img/photo_gallery/2.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  14%{
+    background: url(./img/photo_gallery/3.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  21%{
+    background: url(./img/photo_gallery/4.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  28%{
+    background: url(./img/photo_gallery/5.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  35%{
+    background: url(./img/photo_gallery/6.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  42%{
+    background: url(./img/photo_gallery/7.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  49%{
+    background: url(./img/photo_gallery/8.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  56%{
+    background: url(./img/photo_gallery/9.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  63%{
+    background: url(./img/photo_gallery/10.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  70%{
+    background: url(./img/photo_gallery/11.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  77%{
+    background: url(./img/photo_gallery/12.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  84%{
+    background: url(./img/photo_gallery/13.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  91%{
+    background: url(./img/photo_gallery/14.jfif) center center no-repeat;
+    background-size: cover;
+  }
+}
+.footer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  list-style-type: none;
+}
+.up{
+  position: fixed;
+  margin-top: 46%;
+  left: 50px;
+  background-color: #acbfde  ;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  box-shadow: 1px 1px 1px #0f49a1;
+
+}
+.event{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.event div{
+  width: 400px;
+  background-color: #acbfde ;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px #0f49a1;
+
+}
+.info{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #acbfde ;
+  margin-top: 10px;
+}
+form{
+  width: min-content;
+  margin: 0 auto;
+}
+.form{
+  box-sizing: border-box;
+  background-color: #acbfde;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px #0f49a1;
+
+}
+form input{
+  outline: none;
+  padding: 5px;
+  border-radius: 7px;
+  width: 200px;
+  border: 1px solid #0f49a1 ;
+}
+form input[type="submit"]{
+  background:none;
+  transform: scale(1);
+}
+form input[type="submit"]:hover{
+  transform: scale(1.1);
+}
+.events{
+  margin-top: 60px;
+}
